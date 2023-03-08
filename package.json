@@ -1,0 +1,19 @@
+{
+  "name": "matchmaking-bot",
+  "version": "0.1.0",
+  "description": "Interserver matchmaking bot, aimed to allow players from multiple places to create lobbies together.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --exec ts-node index.ts",
+    "serve": "ts-node index.ts"
+  },
+  "author": "SkepticalFrog",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.7.1",
+    "dotenv": "^16.0.3",
+    "redis": "^4.6.5",
+    "typescript": "^4.9.5"
+  }
+}
