@@ -1,8 +1,7 @@
 {
-  "name": "matchmaking-bot",
+  "name": "ts-bot-template",
   "version": "0.1.0",
   "description": "Interserver matchmaking bot, aimed to allow players from multiple places to create lobbies together.",
-  "invite": "https://discord.com/api/oauth2/authorize?client_id=1082654668280303686&permissions=406143102033&scope=applications.commands%20bot",
   "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

@@ -1,9 +1,7 @@
 import {
-  ClientPresence,
   REST,
   RESTPostAPIApplicationCommandsJSONBody,
   Routes,
-  SlashCommandBuilder,
 } from 'discord.js';
 import dotenv from 'dotenv';
 import fs from 'node:fs';
