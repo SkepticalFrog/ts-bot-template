@@ -6,7 +6,7 @@
   "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon --exec ts-node index.ts",
+    "dev": "concurrently \"nodemon --watch . --exec ts-node index.ts\" \"nodemon --watch commands --exec ts-node deploy-commands.ts\"",
     "serve": "ts-node index.ts",
     "deploy-test": "ts-node deploy-commands.ts",
     "deploy-global": "GLOBAL=true ts-node deploy-commands.ts"
@@ -20,6 +20,7 @@
     "typescript": "^4.9.5"
   },
   "devDependencies": {
+    "concurrently": "^7.6.0",
     "nodemon": "^2.0.21",
     "ts-node": "^10.9.1"
   }
