@@ -2,6 +2,7 @@ import { Client, Collection, Events, GatewayIntentBits, SlashCommandBuilder } fr
 import dotenv from 'dotenv';
 import fs from 'node:fs';
 import path from 'node:path';
+import { Command } from './types';
 
 dotenv.config();
 const token = process.env.DISCORD_TOKEN;
@@ -10,11 +11,6 @@ declare module 'discord.js' {
   interface Client {
     commands: Collection<string, Command>;
   }
-}
-
-type Command = {
-  data: SlashCommandBuilder,
-  execute: Function
 }
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
