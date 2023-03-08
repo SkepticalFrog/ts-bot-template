@@ -1,7 +1,7 @@
 {
   "name": "ts-bot-template",
   "version": "0.1.0",
-  "description": "Interserver matchmaking bot, aimed to allow players from multiple places to create lobbies together.",
+  "description": "Template for Discord bot written in TypeScript",
   "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
